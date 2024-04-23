@@ -1,0 +1,13 @@
+NOT: yaml dosyaları config dosyasının altında olmalıdır.
+
+Mlagent çalıştırılması için cmd ekranında çalıştırılması:
+D:\Projects\mlagentsRepo\ml-agents>conda activate mlagents
+(mlagents) D:\Projects\mlagentsRepo\ml-agents>mlagents-learn config\MlAgentExample_Project\sphere_config.yaml --run-id=sphereNew
+
+Sonuçları tensorborad üzerinde görüntülemek için:
+D:\Projects\mlagentsRepo\ml-agents>conda activate mlagents
+(mlagents) D:\Projects\mlagentsRepo\ml-agents>tensorboard --logdir results --port 6006
+
+Daha önce eğitilen bir modeli eğitmeye devam etmek için:
+D:\Projects\mlagentsRepo\ml-agents>conda activate mlagents
+(mlagents) D:\Projects\mlagentsRepo\ml-agents>mlagents-learn config\MlAgentExample_Project\sphere_config.yaml --run-id=sphere2 --resume
