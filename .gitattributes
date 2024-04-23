@@ -7,3 +7,12 @@
 *.exe filter=lfs diff=lfs merge=lfs -text
 *.iso filter=lfs diff=lfs merge=lfs -text
 *.lzh filter=lfs diff=lfs merge=lfs -text
+
+
+*.cs linguist-language=C#
+*.cs linguist-detectable=true  
+*.java linguist-detectable=false  
+*.js linguist-detectable=false  
+*.html linguist-detectable=false  
+*.xml linguist-detectable=false 
+*.asm linguist-detectable=false 
